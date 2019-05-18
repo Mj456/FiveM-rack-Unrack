@@ -7,8 +7,7 @@ end)
 
 
 RegisterCommand("rack", function(source, args, rawCommand)
-	local player = GetPlayerPed(-1) 
-	RemoveWeaponFromPed(player, "WEAPON_CARBINERIFLE")
+	RemoveWeaponFromPed(GetPlayerPed(-1), "WEAPON_CARBINERIFLE")
 end)
 
 --------------------------------------------------
@@ -20,6 +19,5 @@ end)
 
 
 RegisterCommand("rack1", function(source, args. rawCommand)
-	local player = GetPlayerPed(-1) 
-	RemoveWeaponFromPed(player, "WEAPON_PUMPSHOTGUN")
+	RemoveWeaponFromPed(GetPlayerPed(-1), "WEAPON_PUMPSHOTGUN")
 end)
